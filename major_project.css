@@ -1,0 +1,1110 @@
+body {
+  width:100%;
+    margin: 0;    
+  height:auto;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url(./image/324918-rock-wallpaper-unique-rock-music-wallpaper-this.jpg);
+  box-sizing: border-box;
+  border:1px soild white;   
+  color:yellow;
+}
+nav{
+    color:white;
+    padding:1% 5%;
+    padding-top: 2%;  
+    display: flex;;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.8;
+    box-sizing: border-box;
+    position:relative;
+}
+nav  input{  
+    background: transparent;
+    color:white;
+    border:hidden;
+    border-bottom: 2px solid  blueviolet  ;
+
+}   
+/* input background make transparent and border make hidden and  created a botton border */
+nav  button{  
+    background: transparent;
+    color:white;
+
+
+    transition: ease-in-out;
+ 
+
+}   
+   /* button  background make transparent and border make whitesmoke color  and  created a bottonradius 10% */
+nav  button:hover{  
+    background: blueviolet;
+    color:white;
+    
+    
+    
+    
+
+} 
+
+
+/* animation for logo  */
+@keyframes rotation1{
+    from {
+        transform: rotate(45deg);
+        
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(135deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(225deg);
+    }
+    125%{
+        transform: rotate(270deg);
+    }
+    150%{
+        transform: rotate(315deg);
+        
+    }
+    175%{
+        transform: rotate(360deg);
+
+    }
+}
+.music-player-logo{
+    font-size: 1rem;
+    margin-left: 0%;
+}
+
+/* logo before musicplayer name  */
+.music-player-logo ::before{
+    content:'';
+    background-image:url(https://cdn.pixabay.com/photo/2016/08/30/03/06/play-1629711_1280.png);
+    display:inline-block;
+    background-size: cover;
+    position:absolute;
+    width:40px;
+   font-size: 1.4rem;
+    height:40px;
+    left:2%;
+    top:9%;
+    animation-name: rotation1 ;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    
+
+
+
+
+
+
+
+
+    
+    
+
+}  
+/* hover effect to button with backgroung of colour blue violet and border color is also make blueviolet     */
+
+
+.my-photo img{
+    border-radius: 50%;
+    margin-top: -18%;
+} 
+/* photo makes circle shape */
+main{
+    display: flex;
+}
+/* this section is for  set both main leftchild and right child must keep togther in a  line  */
+
+.left-side{
+	height: auto;
+	width:65%;
+	margin-top: 10vh;
+	margin-left: 4%;
+	margin-right: 3%;
+	
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: column;
+    box-sizing: border-box;
+
+}
+.right-side{
+        display: inline-flex;
+        flex-direction:column;
+        
+        width:30%; 
+        padding: 1%;
+    }
+
+/* carousel consist of various music albums make its display flex */
+.carousel{
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+/* image size of .carousel-child  is 25%  */
+.carousel-child img{
+display:flex;
+width:33.2%;
+height:auto;
+margin-bottom: 2%;
+
+/* given a hover effect of scale with increase with and height 10.1 percent of that image  */
+}
+.carousel-child img:hover{
+    display:flex;
+    width:25%;
+    height:auto;
+    transform:scale(1.4)
+    
+    
+    }
+    /* by applying flex display we get in row order the images */
+.carousel-child{
+    display:flex;
+    flex-direction: row;
+   
+}
+.latest-release{
+    
+   
+    color:yellow;
+    
+    object-fit:contain;
+    
+    
+}
+.latest-release h1{
+    margin-bottom: 3%; 
+    margin-top: 3%; 
+    background-color: rgb(3, 3, 3);
+    color:yellow;
+    opacity: 1.7;
+}
+.songs-latest{
+    display: flex;
+    flex-direction: row ;
+    margin-bottom: 5%; 
+    margin-top: 3%; 
+    background-color: rgb(7, 7, 32);  
+  
+
+}
+.card{
+    margin: 2%;
+    background: transparent;
+
+  
+}
+.card img:hover{
+    margin: 2%;
+    background: transparent;
+    box-shadow: 0px 0px 15px 5px yellow;
+
+  
+}
+
+
+
+.card-text{
+padding-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 0vw;
+}
+/* latest release heading,cards and song title  */
+.station{
+    width:100%;
+    height:auto;
+    flex-wrap: wrap;
+}
+.station-types{
+    display:flex;  
+   flex-wrap: wrap;
+    object-fit: cover;
+   
+    
+        position:relative;
+        background-color: rgb(7, 7, 32);    
+}
+/* station create like box  */
+.station-type{
+    
+ color:white;
+    margin: 1.5%;
+    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.station-type:hover{
+    box-shadow: 0px 0px 14px 5px yellow;
+}
+
+/* station completed  */
+/* artist section sart here   set width100%  */
+.artist-details{ 
+position:relative;
+background-color: rgb(7, 7, 32);
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+
+.artist-image  img{
+    border-radius: 50%;
+    
+  
+}
+.artist-image  {
+
+    margin: 3%;
+}
+
+.artist{
+position: relative;
+margin-top: 2%;
+margin-bottom: 1.5%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+
+}
+.artist img:hover{
+    box-shadow: 0px 0px 14px 5px yellow;
+    }
+/* make using another div  tag and create these artist data and image in row format using flex   */
+.artist-details{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+   
+}
+.different-music-at-various-spot{
+ 
+    display:flex;
+}
+.imageofelectronic img{
+   
+    margin: 2%;
+    padding: 4%;
+   
+    
+    
+}
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  /* this section for varites of music party ,travel and electronics */
+  .different-music-at-various-spot .imageofelectronic img:hover{
+    animation: zoomIn;
+    animation-duration:0.1s;
+    animation-iteration-count:1;
+    animation-delay: 0.0s;
+    
+    box-shadow: 0px 0px  12px 5px;
+  }
+  .imageofelectronic{
+        
+    position: relative;
+    text-align: center;
+    color: white;
+ 
+} 
+/* using absoulte and translate: -50 ans 50%; */
+.imageofelectronic h2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+/* latest english songs section in row order  */
+.latest-english-song{
+    display: flex;
+    justify-content:space-around ;
+    background-color: rgb(7, 7, 32);
+    margin-bottom: 2%;
+}
+.latest-english-song img:hover{
+    display: flex;
+    justify-content:space-around ;
+    background-color: rgb(7, 7, 32);
+    box-shadow: 0px 0px 14px 5px yellow;
+}
+/* latest hindi songs section in row order  */
+.latest-hindi-song{
+    display: flex   ;
+    justify-content:space-around ;
+    background-color: rgb(7, 7, 32);
+    position: relative;
+    
+
+}
+
+
+.play-details {
+    /* display: none; */
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+
+    /* background-color: white; */
+}
+.card:hover .play-details{
+ font-size: 3rem;
+    /* display: block; */
+    color: rgb(251, 255, 13);
+}
+.latest-hindi-song img:hover{
+    display: flex   ;
+    justify-content:space-around ;
+    background-color: rgb(7, 7, 32);
+    background-image: url(./image/play-button-2138735_960_720.webp);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 14px 5px yellow;
+    
+}
+/* hover effect for for latest hindi song play button will display inside the image  */
+.artist-image1 {
+
+    position: relative;
+ 
+  
+  border-radius: 50%;
+}
+.artist-image1 img{
+
+    position: relative;
+  text-align: center;
+
+  background-color: #242323;
+  border-radius: 50%;
+  
+}
+
+    
+    
+ 
+  
+  .artist-image2{
+
+    position: relative;
+
+  
+  
+  border-radius: 50%;
+}
+.artist-image2 img{
+
+    position: relative;
+  text-align: center;
+
+  background-color: rgb(36, 35, 35);
+  border-radius: 50%;
+}
+
+.artist-image1 img{
+
+    position: relative;
+  text-align: center;
+ 
+  background-color: #242323;
+  border-radius: 50%;
+  
+}
+.artist-image3 img{
+
+    position: relative;
+  text-align: center;
+
+  background-color: rgb(36, 35, 35);
+  border-radius: 50%;
+}
+.artist-image4 img{
+    position: relative;
+    text-align: center;
+  
+    background-color: rgb(36, 35, 35);
+    border-radius: 50%;
+
+
+}
+/* artist make as circle image   */
+/* 4 differnt imagesof artist  */
+
+
+#aside-title{
+	height: auto;
+	width: auto;
+	font-size: 2rem;
+	font-family: sans-serif;
+	color: var(--font_color_1);
+	font-weight: bold;
+	display: inline-flex;
+}
+#aside-dropdown{
+	margin-top: 1vh;
+	display: inline-flex;
+}
+#aside-dropdown select{
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	color: var(--font_color_3);
+	font-weight: bold;
+	background-color: var(--bg_color_1);
+	border: 0px;
+}
+#aside-dropdown option{
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	color: black;
+	background-color: var(--font_color_1);;
+	border :0px;
+}
+#aside-dropdown select:focus{
+	outline:none;
+}
+#queue-item{
+	height: 100px;
+	width: 320px;
+    background-color: rgb(7, 7, 32);
+	display: flex;
+	flex-flow:column wrap;
+	margin-top: 1vh;
+	border-radius:5px;
+}
+#queue-item-img{
+	height: 80px;
+	width: 80px;
+	padding: 1%;
+	margin-top: 1.5vh;
+	margin-left: 1vw;
+	background-image: url(Images/latest-release-2.png);
+	background-position: center;
+	background-size: cover;
+	color: var(--font_color_1);
+	text-align: center;
+	font-size: 1.3rem;
+	border-radius: 3px;
+}
+#queue-item-title{
+	font-family: sans-serif;
+	color: var(--font_color_1);
+	font-size: 0.8rem;
+	position: relative;
+	top:5vh;
+}
+#queue-favourite{
+	margin-left: 180px;
+	margin-top: -50px;
+	 color: var(--font_color_1);
+	font-size: 1.2rem;
+    
+
+
+}
+#queue-favourite:hover{
+    color:orangered;
+}
+/* in footer set volume button play button pause button and forward and backward in single line using flex   */
+footer
+{
+
+    position: absolute;
+	
+	width: 100%;
+	
+	background-color: #282828;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+    margin-top: 3%;
+	margin-bottom: 0%;
+    
+
+}
+#pause-button:hover{
+    color:orangered;
+
+}
+#playbutton:hover{
+    color:orangered;  
+}
+#next-button-backward:hover{
+
+    color:orangered;
+}
+#next-button-forward:hover{
+    color:orangered;
+
+}
+
+
+
+.player {
+	width: 200%;
+	display: flex;
+	flex-direction: column;
+	
+	
+	flex-wrap: nowrap;
+}
+.songlength{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      
+       
+        box-sizing: border-box;
+         
+        color:yellow;
+        margin-left: -auto  ;
+ 
+      }
+      nav{
+          color:white;
+          padding:1% 5%;
+          padding-top: 2%;  
+          display: flex;;
+          justify-content: space-between;
+          background-color: black;
+          opacity: 0.8;
+          box-sizing: border-box;
+          position:relative;
+          box-sizing: border-box;
+      }
+      nav  input{  
+          background: transparent;
+          color:white;
+          border:hidden;
+          border-bottom: 2px solid  blueviolet  ;
+      
+      }   
+      /* input background make transparent and border make hidden and  created a botton border */
+      nav  button{  
+          background: transparent;
+          color:white;
+      
+      
+          transition: ease-in-out;
+       
+      
+      }   
+         /* button  background make transparent and border make whitesmoke color  and  created a bottonradius 10% */
+      nav  button:hover{  
+          background: blueviolet;
+          color:white;
+          
+          
+          
+          
+      
+      }   
+      /* hover effect to button with backgroung of colour blue violet and border color is also make blueviolet     */
+      
+      
+      .my-photo img{
+          border-radius: 50%;
+      } 
+      /* photo makes circle shape */
+      .music-player-logo{
+        font-size: 1rem;
+        margin-left: 0%;
+    }
+    
+    /* logo before musicplayer name  */
+    .music-player-logo ::before{
+        content:'';
+        background-image:url(https://cdn.pixabay.com/photo/2016/08/30/03/06/play-1629711_1280.png);
+        display:inline-block;
+        background-size: cover;
+        position:absolute;
+        width:40px;
+       font-size: 1.4rem;
+        height:40px;
+        left:0%;
+        top:9%;
+        animation-name: rotation1 ;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    
+    
+    
+    
+        
+        
+    
+    }  
+/* animation given to logo rotating the play button  */
+      main{
+        display:block;   
+    }
+    
+    .left-side{
+        height: auto;
+        width:65%;
+        
+        margin-left: 4%;
+        margin-right: 3%;
+        
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        box-sizing: border-box;
+    
+    }
+    .right-side{
+           display: block;
+
+    }
+	#aside-dropdown{
+		display: none;
+	}
+	#aside-title{
+		font-size: 1.5rem;
+	}
+      /* carousel consist of various music albums make its display flex */
+      .carousel{
+          display: flex;
+          box-sizing: border-box;
+          position:relative;
+          
+      }
+      /* image size of .carousel-child  is 25%  */
+      .carousel-child img{
+      display:flex;
+      width:33%;
+      height:auto;
+      margin-bottom: 2%;
+      
+      /* given a hover effect of scale with increase with and height 10.1 percent of that image  */
+      }
+      .carousel-child img:hover{
+          display:flex;
+          width:25%;
+          height:auto;
+          transform:scale(1.4)
+          
+          
+          }
+          /* by applying flex display we get in row order the images */
+      .carousel-child{
+          display:flex;
+          flex-direction: row;
+         
+      }
+      .latest-release{
+          
+        
+          color:white;
+          
+          object-fit:contain;
+          
+      }
+      .latest-release h1{
+          margin-bottom: 3%; 
+          margin-top: 3%; 
+          background-color: black;
+          color:yellow;
+          opacity: 1.7;
+      }
+      .songs-latest{
+          display: flex;
+          flex-direction: row ;
+        
+      
+      }
+      .card{
+          margin: 2%;
+          background: transparent;
+        
+      }
+      .card-text{
+      padding-left: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 0vw;
+      }
+
+
+
+      .artist-details{ 
+        position:relative;
+        background-color: rgb(7, 7, 32);
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        }
+        
+        
+        .artist-image  img{
+            border-radius: 50%;
+            
+          
+        }
+       
+        
+        .artist{
+        position: relative;
+        margin-top: 2%;
+        margin-bottom: 1.5%;
+     
+        
+        }
+        .artist img:hover{
+            box-shadow: 0px 0px 14px 5px yellow;
+            }
+        /* make using another div  tag and create these artist data and image in row format using flex   */
+        .artist-details{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            
+           
+        }
+      /* latest release heading,cards and song title  */
+    
+      /* station completed  */
+      /* set artist section with width100%  */
+    
+      
+    /* make circl eshape the image of artist    */
+      
+    
+      /* set margin of artist photo 3%  */
+      
+      
+      
+     
+      /* artist section set in a one line all artist  */
+      .different-music-at-various-spot{
+       
+          display:flex;
+          flex-wrap: wrap;
+
+          position:relative;
+
+      }
+      /* center of the image contain text  */
+      .imageofelectronic{
+        
+            position: relative;
+            text-align: center;
+            color: white;
+         
+      } 
+      /* using absoulte and translate: -50 ans 50%; */
+      .imageofelectronic h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+
+      .imageofelectronic img{
+          
+          margin: 2%;
+          padding: 4%;
+         
+          
+          
+      }
+      .latest-english-song{
+          display: flex;
+          justify-content:space-around ;
+      }
+      .latest-hindi-song{
+          display: flex   ;
+          justify-content:space-around ;
+      }
+      footer{
+        box-sizing: border-box;
+      }
+     
+
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile size */
+/* station section items in block display */
+@media screen and (max-width:500px){
+
+.carousel{
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.carousel-child img{
+    display:block;
+    width:33.2%;
+    height:auto;
+    margin-bottom: 2%;
+    
+    /* given a hover effect of scale with increase with and height 10.1 percent of that image  */
+    }
+.station-types{
+    display:block;  
+ 
+        
+}
+.station-type{
+    
+ color:white;
+ 
+    width:100%;
+    
+
+}
+
+
+.music-player-logo{
+    font-size: 1rem;
+    margin-left: 0%;
+}
+
+/* logo before musicplayer name  */
+.music-player-logo ::before{
+    content:'';
+    background-image:url(https://cdn.pixabay.com/photo/2016/08/30/03/06/play-1629711_1280.png);
+    display:inline-block;
+    background-size: cover;
+    position:absolute;
+    width:30px;
+   font-size: 1.4rem;
+    height:30px;
+    left:-1%;
+    top:9%;
+    animation-name: rotation1 ;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+
+
+
+    
+    
+
+}  
+main{
+    display:block;    
+}
+/* this section is for  set both main leftchild and right child must keep togther in a  line  */
+
+.left-side{
+	height: auto;
+	width:90%;
+	margin-top: 10vh;
+	margin-left: 4%;
+	margin-right: 3%;
+	
+	display: block;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: column;
+    box-sizing: border-box;
+
+}
+.right-side{
+        display: block;
+        flex-direction:column;
+        
+        width:100%; 
+        padding: 1%;
+    }
+.station-type:hover{
+    box-shadow: 0px 0px 3px  8px gray;
+    background-color: black;
+    position:relative;
+    opacity: 0.7;
+    cursor: pointer;
+    
+    
+
+}
+
+.station-type img:hover{
+    background-color: black;
+    opacity: 1;
+}
+
+.artist-details{
+    display:block;
+    margin:1%;
+    
+   
+}
+/* this section for various music  */
+.different-music-at-various-spot .imageofelectronic img:hover{
+    animation: zoomIn;
+    animation-duration:0.1s;
+    animation-iteration-count:1;
+    animation-delay: 0.0s;
+    
+    box-shadow: 0px 0px  12px 5px;
+  }
+  .imageofelectronic{
+        
+    position: relative;
+    text-align: center;
+    color: white;
+ 
+} 
+/* using absoulte and translate: -50 ans 50%; */
+.imageofelectronic h2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+.artist-details{
+    width:100%;
+    
+    
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+    object-fit: contain;
+    background-size:cover;
+    overflow:hidden;
+    justify-content: center;
+    text-align: center;
+    
+}
+.artist-image  img{
+    
+    opacity: 1;
+    margin-top:2.5%;
+    margin-bottom:2.5%;
+
+}
+.station-types{
+    display:block;
+   
+    object-fit: cover;
+ 
+    width:100%;
+        position:relative;
+        
+        flex-wrap: wrap;
+       
+}
+.station-type{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+
+}
+footer{
+    width:100%;
+}
+
+
+
+}
